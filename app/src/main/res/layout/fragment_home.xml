@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/appheader"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeScrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/_txt_AboutThisApp"
+                android:id="@+id/txt_AboutThisApp"
+                android:textSize="16sp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/_txt_EventBus"
+                android:id="@+id/txt_EventBus"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#878787"
+                android:background="@drawable/textview_custom" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Inner app Broadcast"
+                android:id="@+id/btn_Sample_Broadcast"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/_txt_JsonSamples"
+                android:id="@+id/txt_JsonSamples"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#878787"
+                android:background="@drawable/textview_custom" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JSON Call Examples"
+                android:id="@+id/btn_Json_Calls"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/_txt_DatabaseSamples"
+                android:id="@+id/txt_DatabaseSamples"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#878787"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/textview_custom" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Database Examples"
+                android:id="@+id/btn_DatabaseSamples"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/_txt_FragmentSwitch"
+                android:id="@+id/txt_FragmentSwitch"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#878787"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/textview_custom" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Fragment Example"
+                android:id="@+id/btn_ChangeFragment"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/_txt_FragmentImaging"
+                android:id="@+id/txt_FragmentImaging"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#878787"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/textview_custom" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imaging Examples"
+                android:id="@+id/btn_ChangeFragmentImaging"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/_txt_FragmentSettings"
+                android:id="@+id/txt_FragmentSettings"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#878787"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/textview_custom" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings/Preferences Example"
+                android:id="@+id/btn_SettingsSample"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/_txt_FragmentLoadingImages"
+                android:id="@+id/txt_FragmentLoadingImages"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#878787"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/textview_custom" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading Images Example"
+                android:id="@+id/btn_LoadImgSample"
+                android:layout_marginBottom="25dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

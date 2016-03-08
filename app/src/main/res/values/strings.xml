@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">MVC Template</string>
+    <string name="app_settings_name">MVCish</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- String Values for TextViews (Groups by Fragment)
+         Naming all string values the same as their Owning objects, simply
+         with an underscore so that they are easy to reference (when possible)
+     -->
+    <!-- Application Wide String Values -->
+    <string name="_txt_App_Busy_JsonRequest">Json Request is already in progress.</string>
+    <string name="_txt_App_Failed_JsonRequest">Unable to create your request, error creating Json Object.</string>
+    <string name="_txt_App_Error_GenericJson">Unable to get Json Request.</string>
+    <string name="_txt_App_Loading_Message_1">Processing Request</string>
+
+    <!-- Slideout menu values -->
+    <string name="drawer_open">Menu Opened</string>
+    <string name="drawer_close">Menu Closed</string>
+    <string-array name="menu_items">
+        <item>Inner App Broadcast</item>
+        <item>JSON Examples</item>
+        <item>Database Examples</item>
+        <item>Change Fragment Example</item>
+        <item>Imaging Example</item>
+        <item>App Settings Example</item>
+        <item>Loading Images</item>
+    </string-array>
+
+    <!-- String Values for homeFragment -->
+    <string name="_txt_AboutThisApp">Welcome to our sample android application.  We will demonstrate how to
+    structure and perform standard actions and tasks within this application.</string>
+    <string name="_txt_EventBus">To send inner application broadcasts or for listening to events, we are using EventBus which is a 3rd party open source product.</string>
+    <string name="_txt_EventBus_Sample_Message">Good news, everyboady, we are extending arts and crafts time by four and a half hours today.</string>
+    <string name="_txt_JsonSamples">Requesting data from servers with Json should be fairly simple with this approach.  We will simply call
+    a model which will self populate entities using our API manager (asyn call), once complete the EventBus will be called with the final result.</string>
+    <string name="_txt_DatabaseSamples">This is a quick example of how to use this DatabaseHandler(repository) class along side of SQLite.</string>
+    <string name="_txt_FragmentSwitch">This is an example of how to change fragments and pass data along with the switch</string>
+    <string name="_txt_FragmentImaging">This is a few examples of how to manage, scale and redraw images using the standard android libraries</string>
+    <string name="_txt_FragmentSettings">This is a quick example on how to save application settings and preferences.</string>
+    <string name="_txt_FragmentLoadingImages">This is a quick example on how load images from external sources using the Picasso Library.</string>
+
+
+    <!-- String Values for homeFragment -->
+    <string name="_txt_exampleFragment">Switching Fragements</string>
+    <string name="_txt_sampleFragment_About">This example shows you how to use the Fragment Router Class to efficiently manage/switch between
+    multiple fragments.  (Very iOS-ish approach to changing screens)</string>
+    <string name="_txt_sampleFragment_Directions">To create your own Fragment:
+        \n 1. create your fragment and layout file.
+        \n 2. Register it with FragmentRouter in MainApplication.java
+        \n 3. (optional) Make it your starting fragment in MainActivity.java</string>
+
+    <!-- String Values for imaging Fragment -->
+    <string name="_txt_imagingFragment">Android Image Functions</string>
+    <string name="_txt_imagingFragment_Img1">Original Image</string>
+    <string name="_txt_imagingFragment_Img2">Scaled Image</string>
+    <string name="_txt_imagingFragment_Img3">Scaled-Rounded</string>
+
+</resources>
