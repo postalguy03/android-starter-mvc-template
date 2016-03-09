@@ -21,7 +21,7 @@ I want to expand on my samples by adding the following sample pages:<br>
 2. Interfacing with other software packages (Email, SMS, etc.)<br>
 3. Deep Linking Samples<br>
 4. Social Media Libraries<br>
-5. Google services such as Push Notifications, Analytics, etc.<br>
+5. Google services such as Push Notifications, Analytics, etc.<br> 
 
 Once you have a sample of all of these tools (current and future) then I feel you can take this and make practically any business or social media product with ease.  I hope you can take something good from this project; please keep in mind that I 100% understand that there are better ways of doing everything I have done however I have purposely chosen a specific way to demonstrate these concept  because I feel it was a good balance between showing others something new in a way that was easy to understand while not being too far from a good technical practice.
 
