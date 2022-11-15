@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+    useLibrary "org.apache.http.legacy"
     packagingOptions {
         exclude 'META-INF/ASL2.0'
         exclude 'META-INF/LICENSE'
@@ -10,8 +11,8 @@ android {
     }
     defaultConfig {
         applicationId 'cct.github.droid.android_mvc_sample'
-        minSdkVersion 10
-        targetSdkVersion 21
+        minSdkVersion 14
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -26,11 +27,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
-    compile 'com.android.support:support-v4:21.0.3'
-    compile 'de.greenrobot:eventbus:2.4.0'
-    compile 'com.google.code.gson:gson:2.3.1'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:21.0.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'de.greenrobot:eventbus:2.4.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
 }
